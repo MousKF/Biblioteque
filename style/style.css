@@ -1,0 +1,62 @@
+/*Réglages généraux*/
+@font-face {
+    font-family: "police-titre";
+    src: url(./grastitre.otf);
+}
+@font-face {
+    font-family: "police-base";
+    src: url(./Alensia.otf);
+}
+* {
+    /*Supprimer toutes les marges par defaults pour ne pas etre embété*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /*palette de couleur*/
+    --couleur-claire: #D2E3C8;
+    --couleur-midclaire: #86A789;
+    --couleur-midfonce: #739072;
+    --couleur-fonce: #4F6F52;
+}
+body {
+    font-family: "police-base";
+    background: var(--couleur-claire);
+    color: var(--couleur-fonce);
+
+
+}
+h1 {
+    font-family: "police-titre";
+    font-size: 5rem;
+}
+
+h3 {
+
+    font-size: 2.5rem;
+}
+
+/*réglage de la partie nav */
+#logo  {
+    width: 400px;
+}
+
+/*réglage de la partie header */
+header {
+    background: radial-gradient(circle at center, var(--couleur-midfonce), var(--couleur-fonce));
+    color: var(--couleur-claire);
+    height: 20vh;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+  
+}
+
+/*réglage de la partie main  */
+
+/*réglage de la partie aside */
