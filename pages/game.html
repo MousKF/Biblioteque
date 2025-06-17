@@ -6,12 +6,11 @@
     <title>Gaming Zone</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="icon" href="../src/logo.png">
-    <script src="../Javascript/Java.js"></script>
+    <script src="../Javascript/Java.js" defer></script>
 </head>
 <body>
     <!-- Zone du menu, en haut de la page-->
-    <nav>
-
+    <nav> 
         <img id="logo" src="../src/logo2.png" alt="Logo E2C">
         <div id="nav-bar">
         <a class="nav-button" href="../index.html">Accueil</a>
@@ -25,6 +24,19 @@
         <h1>Espace détente</h1>
         <h3>We love javascript!</h3>
      </header>
-     
+     <div id="main-game">
+        <div id="user-interface">
+            <div>
+            <label for="user-number">Entre ton nombre ici!</label>
+            <input id="user-number" name="user-number" type="number" placeholder="mets ton nombre ici!" min="1" max="150">
+            </div>
+
+            <input id="send-button" type="submit" value="Proposition!">
+        </div>
+        <div id="game-display">
+            
+        </div>
+
+     </div>
 </body>
 </html>
