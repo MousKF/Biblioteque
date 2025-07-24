@@ -10,20 +10,14 @@
 </head>
 <body>
     <!-- Zone du menu, en haut de la page-->
-    <nav> 
-        <img id="logo" src="../src/logo2.png" alt="Logo E2C">
-        <div id="nav-bar">
-        <a class="nav-button" href="../index.html">Accueil</a>
-        <a class="nav-button" href="../pages/library.html">Bibliothèque</a>
-        <a class="nav-button" href="../pages/game.html">Détente</a>
-        </div>
+    
 
-    </nav>
-    <!-- En tete stylé--> 
-     <header>
-        <h1>Espace détente</h1>
-        <h3>We love javascript!</h3>
-     </header>
+    <?php
+        require_once("../view/_partials/_header.php");
+        require_once("../view/_partials/_nav.php");
+
+    ?>
+   
      <div id="main-game">
         <div id="user-interface">
             <div>
