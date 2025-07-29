@@ -1,4 +1,6 @@
 <?php 
+session_start();
+
     $pageTitle = "Bibliothèque de l'E2C";
     $pageSubtitle = "Qu'est-ce que c'est ?"; 
     $navList = [

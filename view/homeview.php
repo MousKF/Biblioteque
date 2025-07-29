@@ -6,6 +6,8 @@
     <title>Bibliothèque E2C</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="icon" href="../src/logo.png">
+    <script src="../Javascript/connect.js" defer></script>
+    <script src="../Javascript/flash.js" defer></script>
 </head>
 <body>
     <!-- Zone du menu, en haut de la page-->
@@ -14,7 +16,13 @@
    <?php 
     require_once("../view/_partials/_nav.php");
     require_once("../view/_partials/_header.php");
-
+    require_once("../view/_partials/_connect.php");
+    if(isset($_GET["message"])) {
+        require_once("../view/_partials/_flashMessage.php");
+    }
+    if(isset($_SESSION["userID"])) {
+        require_once("../view/_partials/_footer.php");
+    }
    ?>
      <!-- Zone principale - présentation de l'e2c et de Silence, on lit -->
      <div id="rangement">
@@ -70,19 +78,7 @@
             
         </aside>
         </div> 
- <div id="connect-box">
-    <form action="../controller/logincontroller.php" method="post">
-        <div class="connect-line">
-            <label for="email">email</label>
-            <input type="mail" id="email" name="email" required>
-        </div>
-        <div class="connect-line">
-            <label for="password">Mot de passe</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-        <input type="submit" value="Valider" class="form-button">
-
-    </form>
- </div>   
+ 
+    
 </body>
 </html>
